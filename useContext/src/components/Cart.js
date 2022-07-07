@@ -3,7 +3,6 @@ import { useCart} from '../context/Cart';
 
 const Cart = () => {
     const cart = useCart();
-
     const total = cart.items.reduce((a,b) => a+ b.price, 0)
 
     const cartItems = cart.items.map((item) => {
